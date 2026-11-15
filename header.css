@@ -1,0 +1,132 @@
+.header{
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right:0px;
+    background-color: white;
+    border-bottom-width:1px;
+    border-bottom-style: solid;
+    border-bottom-color:rgb(223, 214, 214);
+
+}
+.left-section{
+    align-items: center;
+    display: flex;
+}
+.hamburger-menu{
+    height: 25px;
+    margin-right: 24px;
+     margin-left: 24px;
+}
+.yt-logo{
+    height: 50px;
+    width: 100px;
+    object-fit: cover;
+    
+}
+
+.middle-section{
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+}
+.search-bar{
+    flex: 1;
+    border-radius:2px ;
+    height: 36px;
+    font-size: 16px;
+    padding-left: 10px;
+    border-style:solid ;
+    border-width: 1px;
+    border-color: rgb(160, 157, 157);
+    box-shadow: inset 1px 2px 5px rgb(0, 0, 0,0.03);
+    width: 0;
+}
+.search-bar::placeholder{
+    font-family: roboto,arial;
+    font-size: 16px;
+}
+.search-button{
+    height: 40px;
+    width: 60px;
+    background-color:  rgb(228, 225, 225);
+    border-color: rgb(160, 157, 157);
+    border-style: solid;
+    border-width: 1px;
+    margin-left: -1px;
+    margin-right: 10px;
+     
+    position: relative;
+}
+
+.search-button .tooltip{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.2s;
+    pointer-events: none;
+}
+.search-button:hover .tooltip{
+    opacity: 7;
+}
+.search-voice{
+     height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+}
+.search-icon{
+    height: 25px;
+    margin-top: 4px;
+}
+.voice-icon{
+     height: 25px;
+    margin-top: 4px;
+}
+.right-section{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.notifications{
+    height: 25px;
+    position: relative;
+}
+.count{
+    position: absolute;
+    top: 8px;
+    right: 90px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    padding-left: 6px;
+    padding-bottom: 2px;
+    padding-right: 6px;
+    padding-top: 2px;
+    font-size: 11px;
+
+}
+.channel-pic{
+    height: 40px;
+    border-radius: 20px;
+
+}
